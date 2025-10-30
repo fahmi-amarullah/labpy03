@@ -1,0 +1,12 @@
+import random
+n=int(input("masukan nilai n:"))
+i=0
+
+print()
+while i < n :
+    a = random.random()
+    if a < 0.5:
+        print(f"data ke : {i}=> {a}")
+    i += 1
+
+print("selesai")
