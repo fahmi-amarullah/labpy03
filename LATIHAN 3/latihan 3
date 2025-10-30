@@ -1,0 +1,20 @@
+saldo = 1000000
+
+while True :
+    print(f"\nsaldo saat ini : rp {saldo}")
+    print("1. Tarik uang")
+    print("2. keluar")
+
+    pilihan = input ("pilihan menu (1/2):")
+    if pilihan == "1" :
+        tarik = int(input("masukan jumlah penarikan"))
+        if tarik <= saldo:
+            saldo =  saldo - tarik 
+            print("penarikan berhasil")
+        else : 
+            print("penarikan berhadsil!")
+    elif pilihan == "2":
+        print("terimakasih telah menggunakan ATM!")
+        break
+    else :
+        print ("pilihan tidak valid coba lagi")
